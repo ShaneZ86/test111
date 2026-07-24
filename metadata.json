@@ -1,0 +1,6 @@
+{
+  "name": "抖音退款客服",
+  "description": "1:1复刻抖音退款官方客服实时沟通与退款服务页面",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

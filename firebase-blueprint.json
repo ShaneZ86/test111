@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "sessions": {
+      "title": "CustomerSession",
+      "description": "TikTok customer refund chat session",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "customerName": {
+          "type": "string"
+        },
+        "customerAvatar": {
+          "type": "string"
+        },
+        "orderNumber": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string"
+        },
+        "messages": {
+          "type": "array"
+        },
+        "unreadCount": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "customerName",
+        "customerAvatar",
+        "orderNumber",
+        "createdAt",
+        "lastUpdated",
+        "messages"
+      ]
+    }
+  },
+  "firestore": {
+    "/sessions/{sessionId}": {
+      "schema": "sessions",
+      "description": "Collection of all customer chat sessions"
+    }
+  }
+}

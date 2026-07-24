@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/sessions/:id",
+      "destination": "/api/sessions?id=:id"
+    },
+    {
+      "source": "/api/sessions",
+      "destination": "/api/sessions"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/sessions"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "cleanUrls": true
+}
